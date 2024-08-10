@@ -10,93 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Internal Style Sheet Starts Here-->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 75px;
-        background-color: rgb(18, 18, 65);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        color: rgb(148, 148, 250);
-        font-size: 1.04rem;
-      }
-
-      main hr {
-        border: 0;
-        background: rgb(58, 58, 108);
-        height: 1.2px;
-        margin: 40px 84px;
-      }
-
-      .left {
-        font-size: 1.5rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 90px 0;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
-      .leftSection {
-        font-size: 2.2rem;
-      }
-      .rightSection img {
-        width: 80%;
-      }
-      .purple {
-        color: rgb(148, 67, 224);
-      }
-      .text-gray {
-        color: gray;
-      }
-      #element {
-        color: rgb(148, 67, 224);
-      }
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        height: 80vh;
-      }
-      .secondSection h1 {
-        font-size: 1.9rem;
-      }
-
-      .secondSection .box {
-        background: white;
-
-        height: 2px;
-        margin: 26px 0;
-      }
-    </style>
-    <!-- Internal Style Sheer Ends Here -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Header Section Starts Here -->
@@ -138,7 +52,20 @@
       <section class="secondSection">
         <span class="text-gray">What I have done so far</span>
         <h1>Work Experience</h1>
-        <div class="box"></div>
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="assets/developer.png"
+              alt="Developer Image"
+            />
+            <div class="vertical-title">Android Developer (2019-2022)</div>
+            <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde quaerat suscipit itaque officia nobis illum odit quis perspiciatis perferendis?</div>
+          </div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
       </section>
       <!-- Second Section (Past Experience) in Main Ends Here -->
     </main>
