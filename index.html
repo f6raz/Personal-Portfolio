@@ -41,8 +41,16 @@
         text-decoration: none;
         color: white;
       }
-      nav ul li a:hover{
+      nav ul li a:hover {
         color: rgb(148, 148, 250);
+        font-size: 1.04rem;
+      }
+
+      main hr {
+        border: 0;
+        background: rgb(58, 58, 108);
+        height: 1.2px;
+        margin: 40px 84px;
       }
 
       .left {
@@ -52,7 +60,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 80px 0;
+        margin: 90px 0;
       }
       .firstSection > div {
         width: 30%;
@@ -64,7 +72,28 @@
         width: 80%;
       }
       .purple {
-        color: blueviolet;
+        color: rgb(148, 67, 224);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(148, 67, 224);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box {
+        background: white;
+
+        height: 2px;
+        margin: 26px 0;
       }
     </style>
     <!-- Internal Style Sheer Ends Here -->
@@ -87,21 +116,40 @@
     </header>
     <!-- Header Section Ends Here -->
 
-    <!-- Main Section No. 2 Starts Here  -->
+    <!-- Main Section Starts Here  -->
 
     <main>
+      <!-- First Section in Main Starts Here -->
       <section class="firstSection">
         <div class="leftSection">
           Hi, my name is <span class="purple">Fraz</span>
           <div>and I am a passionate</div>
-          <div>Web Developer</div>
+
+          <span id="element"></span>
         </div>
         <div class="rightSection">
           <img src="assets/bg.png" alt="Background Image" />
         </div>
       </section>
+      <!-- First Section in Main Ends Here -->
+      <hr />
+
+      <!-- Second Section (Past Experience) in Main Starts Here -->
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box"></div>
+      </section>
+      <!-- Second Section (Past Experience) in Main Ends Here -->
     </main>
 
-    <!-- Main Section No. 2 Ends Here  -->
+    <!-- Main Section  Ends Here  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "and", "Android Developer"],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
