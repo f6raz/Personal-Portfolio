@@ -106,7 +106,7 @@ nav ul li a:hover {
   max-width: 80vw;
   margin: auto;
   margin-top: 20px;
-  height: 80vh;
+  height: 122vh;
 }
 
 #workExperience {
@@ -168,14 +168,16 @@ nav ul li a:hover {
   left: -60px;
   color: gray;
   width: 150px;
-  font-size: 9px;
+  font-size: 0.79rem;
 }
+/* Footer Section Start Here */
 
-footer {
+
+/* footer {
   background-color: #10101d;
-}
+} */
 
-.footer {
+/* .footer {
   display: flex;
   padding: 23px 123px;
   justify-content: space-evenly;
@@ -193,4 +195,6 @@ footer .footer-rights {
   text-align: center;
   color: gray;
   padding: 12px 0;
-}
+} */
+
+/* Footer Section Ends Here */
