@@ -1,164 +1,179 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: rgb(0, 0, 33);
-    color: white;
-    font-family: "Poppins", sans-serif;
+  background-color: rgb(0 0 0);
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-    background-color: rgb(18, 18, 65);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: rgb(0 0 0);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    list-style: none;
-    margin: 0 23px;
+  list-style: none;
+  margin: 0 23px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 nav ul li a:hover {
-    color: rgb(148, 148, 250);
-    font-size: 1.04rem;
+  color: rgb(148, 148, 250);
+  font-size: 1.04rem;
 }
 
 main hr {
-    border: 0;
-    background: rgb(58, 58, 108);
-    height: 1.2px;
-    margin: 40px 84px;
+  border: 0;
+  background: rgb(58, 58, 108);
+  height: 1.2px;
+  margin: 40px 84px;
 }
 
 .left {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .firstSection {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 90px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 90px 0;
 }
 
-.firstSection>div {
-    width: 30%;
+.firstSection > div {
+  width: 44%;
 }
 
 .leftSection {
-    font-size: 2.2rem;
+  font-size: 1.9rem;
+  margin-left: 60px;
 }
 .leftSection .buttons {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 .leftSection .btn {
-    padding: 12px;
-    background: #1e2167;
-    color: white;
-    border: 2 px solid white;
-    border-radius: 6px;
-    font-size: 20px;
-    cursor: pointer;
+  padding: 13px 9px;
+  font-size: 15px;
+  font-family: cursive;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 43px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
+.leftSection .btn:hover {
+  animation: bounce 0.6s infinite alternate;
+}
 
-.rightSection img {
-    width: 80%;
+.leftSection .btn:active::after {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0s;
+}
+@keyframes bounce {
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.rightSection {
+  width: 500px;
 }
 
 .purple {
-    color: rgb(148, 67, 224);
+  color: rgb(148, 67, 224);
 }
 
 .text-gray {
-    color: gray;
+  color: gray;
 }
 
 #element {
-    color: rgb(148, 67, 224);
+  color: rgb(148, 67, 224);
 }
 
 .secondSection {
-    max-width: 80vw;
-    margin: auto;
-    height: 80vh;
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
 }
 
 .secondSection h1 {
-    font-size: 1.9rem;
+  font-size: 1.9rem;
 }
 
 .secondSection .box {
-    background: white;
+  background: white;
 
-    height: 2px;
-    margin: 52px 6px 0;
-    display: flex;
+  height: 2px;
+  margin: 52px 6px 0;
+  display: flex;
 }
 
 .secondSection .vertical {
-    height: 93px;
-    width: 1px;
-    background-color: white;
-    margin: 0 98px;
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 98px;
 }
 
-.image-top{
-    width: 23px;
-    position: relative;
-    top: -32px;
-    left: -9px;
+.image-top {
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
 }
 
 .vertical-title {
-    position: relative;
-    top: 75px;
-    width: 150px;
-    
+  position: relative;
+  top: 75px;
+  width: 150px;
 }
 .vertical-desc {
-    position: relative;
-    top: 86px;
-    color: gray;
-    width: 150px;
-    font-size: 9px;
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
 }
 
 footer {
-    background-color: #10101d;
-    
+  background-color: #10101d;
 }
 
 .footer {
-    display: flex;
-    padding: 23px 123px;
-    justify-content: space-evenly;
+  display: flex;
+  padding: 23px 123px;
+  justify-content: space-evenly;
 }
 
 .footer ul {
-    list-style: none;
+  list-style: none;
 }
 
-.footer > div{
-    width: 223px;
+.footer > div {
+  width: 223px;
 }
 
-footer .footer-rights{
-    text-align: center;
-    color: gray;
-    padding: 12px 0;
+footer .footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
 }
