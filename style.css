@@ -45,7 +45,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 90px 0;
+  margin: 82px 0;
 }
 
 .firstSection > div {
@@ -167,8 +167,11 @@ nav ul li a:hover {
   top: 49px;
   left: -60px;
   color: gray;
-  width: 150px;
+  width: 334px;
   font-size: 0.79rem;
+}
+.vertical-desc p{
+  margin-right: 72px;
 }
 /* Footer Section Start Here */
 
