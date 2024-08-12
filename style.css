@@ -74,6 +74,22 @@ nav ul li a:hover {
 
 .leftSection .btn:hover {
   animation: bounce 0.6s infinite alternate;
+  background-color: #111827;
+  color: #f9fafb;
+}
+.leftSection .btn:hover::after {
+  translate: 0;
+}
+
+.leftSection .btn::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #111827;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
 }
 
 .leftSection .btn:active::after {
@@ -152,7 +168,7 @@ nav ul li a:hover {
 .image-top {
   width: 52px;
   position: relative;
-  top: -57px;
+  top: -62px;
   left: -24px;
 }
 
@@ -170,17 +186,16 @@ nav ul li a:hover {
   width: 334px;
   font-size: 0.79rem;
 }
-.vertical-desc p{
+.vertical-desc p {
   margin-right: 72px;
 }
 /* Footer Section Start Here */
 
-
-/* footer {
+footer {
   background-color: #10101d;
-} */
+}
 
-/* .footer {
+.footer {
   display: flex;
   padding: 23px 123px;
   justify-content: space-evenly;
@@ -198,6 +213,6 @@ footer .footer-rights {
   text-align: center;
   color: gray;
   padding: 12px 0;
-} */
+}
 
 /* Footer Section Ends Here */
