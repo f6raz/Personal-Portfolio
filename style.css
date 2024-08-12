@@ -105,6 +105,7 @@ nav ul li a:hover {
 .secondSection {
   max-width: 80vw;
   margin: auto;
+  margin-top: 20px;
   height: 80vh;
 }
 
@@ -138,13 +139,14 @@ nav ul li a:hover {
   height: 2px;
   margin: 73px 6px 0;
   display: flex;
+  justify-content: center;
 }
 
 .secondSection .vertical {
   height: 93px;
   width: 1px;
   background-color: white;
-  margin: 0 98px;
+  margin: auto;
 }
 
 .image-top {
@@ -156,12 +158,14 @@ nav ul li a:hover {
 
 .vertical-title {
   position: relative;
-  top: 75px;
+  top: 39px;
+  left: -62px;
   width: 150px;
 }
 .vertical-desc {
   position: relative;
-  top: 86px;
+  top: 49px;
+  left: -60px;
   color: gray;
   width: 150px;
   font-size: 9px;
