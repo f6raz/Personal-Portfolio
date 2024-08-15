@@ -81,15 +81,15 @@ nav ul li a:hover {
   translate: 0;
 }
 
-.leftSection .btn::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #111827;
-    border-radius: inherit;
-    translate: 6px 6px;
-    transition: 0.25s;
-    z-index: -1;
+.leftSection .btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #111827;
+  border-radius: inherit;
+  translate: 6px 6px;
+  transition: 0.25s;
+  z-index: -1;
 }
 
 .leftSection .btn:active::after {
@@ -125,6 +125,21 @@ nav ul li a:hover {
   height: 122vh;
 }
 
+.workExperience-box {
+  height: 123px;
+  width: 215px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #ff6a95);
+
+  border-radius: 25% 37% 37% 63% / 44% 37% 63% 54%;
+}
+
+.workExperience-text {
+  margin-left: 33px;
+  margin-top: 29px;
+  color: black;
+  font-family: cursive;
+}
+
 #workExperience {
   position: relative;
   z-index: 1;
@@ -153,7 +168,7 @@ nav ul li a:hover {
   background: white;
 
   height: 2px;
-  margin: 73px 6px 0;
+  margin: 100px 6px 0;
   display: flex;
   justify-content: center;
 }
@@ -189,6 +204,74 @@ nav ul li a:hover {
 .vertical-desc p {
   margin-right: 72px;
 }
+
+/* Section Third (Skills) Starts Here */
+
+.thirdSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.thirdSection {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 20px;
+  height: 122vh;
+}
+
+.skills-box {
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #ff6a95);
+
+  border-radius: 63% 37% 37% 63% / 44% 37% 63% 54%;
+}
+
+.skills-text {
+  margin-left: 33px;
+  margin-top: 29px;
+  color: black;
+  font-family: cursive;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center; /* Centers the .first-row divs horizontally */
+  width: 100%; /* Ensures the box-1 takes full width */
+  margin: 20px 20px 20px 20px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns image and text in the center */
+  margin: 0px 50px 0 50px;
+}
+
+.thirdSection .p {
+  margin: 0;
+  font-size: 16px; /* Adjusts font size if necessary */
+}
+
+.image-skill {
+  max-width: 70px; /* Adjusts image size if necessary */
+  margin-bottom: 10px; /* Adds space between the image and the text */
+}
+
+.thirdSection img {
+  border-radius: 37%;
+}
+
+.
+
+/* .image-skill {
+  width: 52px;
+  position: relative;
+  top: -62px;
+  left: -24px;
+} */
+/* Section Third (Skills) Ends Here */
 /* Footer Section Start Here */
 
 footer {
