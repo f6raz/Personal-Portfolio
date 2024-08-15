@@ -13,8 +13,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 75px;
+  height: auto;
   background-color: rgb(0 0 0);
+  margin-top: 10px;
 }
 
 nav ul {
@@ -37,8 +38,20 @@ nav ul li a:hover {
   font-size: 1.04rem;
 }
 
-.left {
-  font-size: 1.5rem;
+.header-text {
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #ff6a95);
+  border-radius: 63% 37% 37% 63% / 44% 37% 63% 54%;
+  height: 102px;
+  width: 171px;
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0; /* Remove any default margin */
+}
+
+.frazText {
+  font-size: 20px;
+  margin: 0;
 }
 
 .firstSection {
@@ -69,11 +82,11 @@ nav ul li a:hover {
   border-radius: 43px;
   cursor: pointer;
   position: relative;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1.9s ease-in-out;
 }
 
 .leftSection .btn:hover {
-  animation: bounce 0.6s infinite alternate;
+  animation: bounce 1.9s infinite alternate;
   background-color: #111827;
   color: #f9fafb;
 }
@@ -221,7 +234,7 @@ nav ul li a:hover {
 }
 
 .skills-box {
-  height: 150px;
+  height: 99px;
   width: 150px;
   background: linear-gradient(135deg, #00c6ff, #0072ff, #ff6a95);
 
@@ -240,6 +253,28 @@ nav ul li a:hover {
   justify-content: center; /* Centers the .first-row divs horizontally */
   width: 100%; /* Ensures the box-1 takes full width */
   margin: 20px 20px 20px 20px;
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Apply the bounce animation to all skill images */
+.image-skill {
+  animation: bounce 2s infinite;
 }
 
 .first-row {
@@ -265,13 +300,10 @@ nav ul li a:hover {
 
 .
 
-/* .image-skill {
-  width: 52px;
-  position: relative;
-  top: -62px;
-  left: -24px;
-} */
+
 /* Section Third (Skills) Ends Here */
+
+
 /* Footer Section Start Here */
 
 footer {
